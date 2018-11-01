@@ -28,31 +28,34 @@
      $("#number-to-guess").text(targetNumber);
 
      //generating random point values for each of crytals
-     for (var i = 0; i < 4; i++) {
+     for (var i = 0; i < images.length; i++) {
          numberOptions[i] = Math.floor(Math.random() * 12) + 1;
 
          // relay the attribute associated with each crystal image
-         imageCrystal.attr("data-crystalvalue", numberOptions[i]);
+         $("#crystal"+i).attr("data-crystalvalue", numberOptions[i])
      }
  }   
 
  //cycle through crystal images and relay them to the DOM
  for (var j = 0; j < 4; j++) {
 
-     //create and img tag in the DOM to place the images into
-     var imageCrystal = $("<img>");
+    //create and img tag in the DOM to place the images into
+    var imageCrystal = $("<img>");
 
-     //add crystal-image class in order to manipulate our images in CSS
-     imageCrystal.addClass("crystal-image");
+    //add crystal-image class in order to manipulate our images in CSS
+    imageCrystal.addClass("crystal-image");
 
-     //give each crystal a source image file from our image array
-     imageCrystal.attr("src", images[j]);
+    //give each crystal a source image file from our image array
+    imageCrystal.attr("src", images[j]);
 
-     // relay the attribute associated with each crystal image
-     imageCrystal.attr("data-crystalvalue", numberOptions[j]);
+    //create new id for each crystal
+    imageCrystal.attr("id","crystal"+j);
 
-     //append it to the end of our crystals ID in the DOM
-     $("#crystals").append(imageCrystal);
+    // relay the attribute associated with each crystal image
+    imageCrystal.attr("data-crystalvalue", numberOptions[j]);
+
+    //append it to the end of our crystals ID in the DOM
+    $("#crystals").append(imageCrystal);
  }
 
  //call the startGame function to start the game
