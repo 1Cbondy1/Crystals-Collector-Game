@@ -1,25 +1,63 @@
 /* class for manipulating the crystal images */
 .crystal-image {
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 150px;
+    width: 145px;
     height: 150px;
+    margin: auto;
 }
 
-/* styles affecting most of the on-screen elements */
-body {
-    background-image: linear-gradient(lightblue, white);
+header {
+    position: fixed;
+    top: 0px;
     text-align: center;
-    margin: auto;
-    width: 700px;
+    padding: 20px;
+    margin: 0px auto;
+    width: 100%;
+    border-bottom: 3px solid grey;
+    background-color: white;
+    border-radius: 6px;
+}
+
+body {
+    background-image: linear-gradient(white, white, orange, purple);
+    margin-top: 150px;
+    background-size:fill;
+    text-align: center;
+    height: 1000px;
+}
+
+hr {
+    width: 500px;
 }
 
 h1 {
+    margin: 0px auto;
+    text-align: center;
+    width: 100%;
     font-family: sans-serif;
     font-size: 40px;
+    font-family: 'Bungee Shade', solid, cursive;;
 }
 
-/* specifically for the text directions */
-#directions {
-    text-align: center;
+h2 {
+    font-family: 'Bungee', solid, cursive;
+    font-style: bolder;
+    font-size: 22px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 500px;
+    background-image: linear-gradient(lightgrey, white);
+    border-bottom: 3px solid grey;
+    border-right: 3px solid grey;
+    border-radius: 6px;
+}
+
+h3 {
+    color: grey;
+    line-height: 2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: left;
+    font-size: 14px;
+    width: 500px;
+    margin: auto;
 }

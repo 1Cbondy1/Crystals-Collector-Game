@@ -4,6 +4,7 @@
  var targetNumber;
  var counter = 0;
  var crystalValue = 0;
+ var toggle = false;
 
  var numberOptions = [10, 4, 7, 2];
  var images = ["assets/images/Crystal-01.png", "assets/images/Crystal-02.png", "assets/images/Crystal-03.png", "assets/images/Crystal-04.png"];
