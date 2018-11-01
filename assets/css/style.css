@@ -1,16 +1,25 @@
+/* class for manipulating the crystal images */
 .crystal-image {
     padding-left: 10px;
     padding-right: 10px;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
+
+/* styles affecting most of the on-screen elements */
 body {
+    background-image: linear-gradient(lightblue, white);
     text-align: center;
+    margin: auto;
+    width: 700px;
 }
+
 h1 {
     font-family: sans-serif;
     font-size: 40px;
 }
+
+/* specifically for the text directions */
 #directions {
     text-align: center;
 }
