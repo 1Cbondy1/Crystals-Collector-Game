@@ -1,9 +1,4 @@
 /* class for manipulating the crystal images */
-.crystal-image {
-    width: 145px;
-    height: 150px;
-    margin: auto;
-}
 
 header {
     position: fixed;
@@ -19,32 +14,33 @@ header {
 
 body {
     background-image: linear-gradient(white, white, orange, purple);
+    width: 100%;
+    height: 100%;
     margin-top: 150px;
-    background-size:fill;
     text-align: center;
-    height: 1000px;
 }
 
 hr {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 }
 
 h1 {
     margin: 0px auto;
     text-align: center;
-    width: 100%;
     font-family: sans-serif;
     font-size: 37px;
-    font-family: 'Bungee Shade', solid, cursive;;
+    font-family: 'Bungee Shade', solid, cursive;
 }
 
 h2 {
     font-family: 'Bungee', solid, cursive;
     font-style: bolder;
     font-size: 22px;
-    padding: 15px;
+    padding: 10px;
     margin: 20px auto;
-    width: 500px;
+    width: 80%;
+    max-width: 500px;
     background-image: linear-gradient(lightgrey, white);
     border-bottom: 3px solid grey;
     border-right: 3px solid grey;
@@ -52,12 +48,31 @@ h2 {
 }
 
 h3 {
-    color: grey;
+    color: rgb(80, 80, 80);
     line-height: 2;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: left;
     font-size: 14px;
-    width: 500px;
+    width: 90%;
+    max-width: 500px;
     margin: auto;
+}
+
+/* media query large screens */
+@media screen and (min-width: 601px) {
+    .crystal-image {
+        width: 145px;
+        height: 150px;
+        margin: auto;
+    }
+}
+
+/* media query small screens */
+@media screen and (max-width: 600px) {
+    .crystal-image {
+        width: 85px;
+        height: 85px;
+        margin: auto;
+    }
 }
